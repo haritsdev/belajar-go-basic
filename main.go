@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main(){
-//komentar pada kode
-fmt.Println("Hello world")
-/*
-	komentar kode
-	menampilkan pesan hello world
-*/
+var firstName string ="john"
+var lastName string
+lastName="wick"
+
+fmt.Println("hallo %s %s !\n",firstName,lastName)
+
 }
