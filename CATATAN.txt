@@ -31,3 +31,29 @@ bisa ditampung. Untuk lebih jelasnya bisa merujuk ke spesifikasi IEEE-754 32-bit
 
 A.10.3. Tipe Data bool (Boolean)
 Tipe data bool berisikan hanya 2 variansi nilai, true dan false. Tipe data ini biasa dimanfaatkan dalam seleksi kondisi dan perulangan (yang nantinya akan kita bahas pada bab 12 dan bab 13).
+
+A.10.4. Tipe Data string
+Ciri khas dari tipe data string adalah nilainya di apit oleh tanda quote atau petik dua ("). Contoh penerapannya:
+
+Selain menggunakan tanda quote, deklarasi string juga bisa dengan tanda grave accent/backticks (```), tanda ini terletak di sebelah kiri tombol 1. Keistimewaan string yang dideklarasikan menggunakan backtics adalah membuat semua karakter didalamnya tidak di escape, termasuk \n, tanda petik dua dan tanda petik satu, baris baru, dan lainnya.
+Semua akan terdeteksi sebagai string.
+
+
+A.10.5. Nilai nil & Zero Value
+nil bukan merupakan tipe data, melainkan sebuah nilai. Variabel yang isi nilainya nil berarti memiliki nilai kosong.
+
+Semua tipe data yang sudah dibahas di atas memiliki zero value (nilai default tipe data). Artinya meskipun variabel dideklarasikan dengan tanpa nilai awal, tetap akan ada nilai default-nya.
+
+Zero value dari string adalah "" (string kosong).
+Zero value dari bool adalah false.
+Zero value dari tipe numerik non-desimal adalah 0.
+Zero value dari tipe numerik desimal adalah 0.0.
+Zero value berbeda dengan nil. Nil adalah nilai kosong, benar-benar kosong. nil tidak bisa digunakan pada tipe data yang sudah dibahas di atas. Ada beberapa tipe data yang bisa di-set nilainya dengan nil, diantaranya:
+
+pointer
+tipe data fungsi
+slice
+map
+channel
+interface kosong atau interface{}
+Nantinya kita akan sering bertemu dengan nil setelah masuk pada pembahasan bab-bab tersebut.
